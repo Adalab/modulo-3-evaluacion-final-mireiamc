@@ -1,9 +1,24 @@
 @import 'core/reset';
 @import 'core/variables';
 
+body {
+  background-image: url('../assets/snowflake.png');
+  background-size: auto;
+  background-position: repeat;
+  background-color: $xmas-green;
+}
+
+.page__container {
+  color: $cream;
+}
+
+.header {
+  padding: 30px;
+  text-align: center;
+}
+
 .movies__container {
-    padding: 30px;
-    padding-top: 50px;
-    text-align: center;
-    background-color: #034F1B;
+  padding: 30px;
+  padding-top: 50px;
+  text-align: center;
 }

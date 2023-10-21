@@ -7,11 +7,12 @@
 
 
     &__item {
-        padding: 20px;
+        padding: 15px;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        gap: 5px;
+        align-items: center;
+            gap: 8px;
         background-color: #7E121D;
         border-radius: 15px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
