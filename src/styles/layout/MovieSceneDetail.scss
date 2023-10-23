@@ -1,0 +1,58 @@
+@import '../core/variables';
+
+.detail {
+  &__container {
+    padding: 30px;
+    border: 4px solid $gold;
+    border-radius: 10px;
+
+    background-color: $xmas-intense-red;
+    @media (min-width: 500px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+  }
+  &__img {
+    width: 300px;
+  }
+}
+
+.link {
+  text-decoration: none;
+  color: $cream;
+  &.box {
+    background-color: $xmas-intense-red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid $gold;
+    text-align: center;
+  }
+}
+
+.text {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 20px;
+  }
+  &__title {
+    font-size: 32px;
+    @media (min-width: 500px) {
+      font-size: 50px;
+    }
+  }
+}
+
+.movies-detail__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+}

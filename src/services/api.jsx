@@ -6,11 +6,13 @@ const getDataFromAPI = () => {
     .then((data) => {
         const cleanData = data.map((data) =>{
             return {
-                poster: data.poster,
-                name: data.movie,
-                full_line: data.full_line,
-                year: data.year,
-                id: uuid(),
+              poster: data.poster,
+              name: data.movie,
+              full_line: data.full_line,
+              year: data.year,
+              id: uuid(),
+              director: data.director,
+              audio: data.audio,
             };
         });
         return cleanData;
