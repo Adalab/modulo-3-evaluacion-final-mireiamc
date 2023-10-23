@@ -24,7 +24,7 @@ const MovieSceneList = ({ movies, movieFilter }) => {
 
   return (
     <>
-      <ul className='movies'>{renderMoviesList}</ul>
+      <ul className='movies__list'>{renderMoviesList}</ul>
     </>
   );
 };
