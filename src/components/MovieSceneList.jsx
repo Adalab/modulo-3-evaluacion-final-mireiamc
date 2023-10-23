@@ -1,18 +1,29 @@
 import '../styles/layout/MovieSceneList.scss';
+
+
 import MovieSceneItem from './MovieSceneItem';
 
 const MovieSceneList = ({ movies }) => {
-  const renderMoviesList = movies.map((movie) => {
+  if (movies.length === 0) {
     return (
-      <li className="movies__item" key={movie.id}>
-        <MovieSceneItem movie={movie}/>
+      <p className='empty__movies'>
+        Oh WoW, que decepción! No hay ninguna WowMovie que coincida con tu
+        búsqueda, prueba de nuevo o pídesela a Santa Claus para Navidad
+      </p>
+    );
+  }
+
+  const renderMoviesList = movies.map((movie, index) => {
+    return (
+      <li className='movies__item' key={movie.id}>
+        <MovieSceneItem movie={movie} />
       </li>
     );
   });
 
   return (
     <>
-      <ul className="movies">{renderMoviesList}</ul>
+      <ul className='movies'>{renderMoviesList}</ul>
     </>
   );
 };

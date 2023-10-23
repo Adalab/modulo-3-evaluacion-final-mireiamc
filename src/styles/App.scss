@@ -6,6 +6,8 @@ body {
   background-size: auto;
   background-position: repeat;
   background-color: $xmas-green;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  letter-spacing: 0.5px;
 }
 
 .page__container {
@@ -13,12 +15,13 @@ body {
 }
 
 .header {
+  font-size: 24px;
   padding: 30px;
   text-align: center;
+  color: #CEAC5C;
 }
 
 .movies__container {
-  padding: 30px;
-  padding-top: 50px;
+  padding: 0 30px 30px 30px;
   text-align: center;
 }
