@@ -30,6 +30,9 @@
     border: 2px solid $gold;
     text-align: center;
   }
+  &:hover{
+    background-color: $lower-red;
+  }
 }
 
 .text {
@@ -55,4 +58,9 @@
   align-items: center;
   gap: 20px;
   padding: 30px;
+}
+
+.error__text{
+  font-weight: 700;
+  font-size: 20px;
 }

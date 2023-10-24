@@ -6,8 +6,8 @@ const MovieSceneList = ({ movies, movieFilter }) => {
   if (movies.length === 0) {
     return (
       <p className='empty__movies'>
-        Oh WoW, que decepción! No hay ninguna WowMovie que coincida con "
-        {movieFilter}". Prueba de nuevo o pídesela a Santa Claus para Navidad.
+        Oh wow, what a disappointment! There is no WowMovie that matches "
+        {movieFilter}". Try again or ask Santa Claus for Christmas.
       </p>
     );
   }

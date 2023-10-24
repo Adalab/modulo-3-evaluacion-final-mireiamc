@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import '../styles/layout/MovieSceneDetail.scss';
 const MovieSceneDetail = ({ movie }) => {
   if (movie === undefined) {
-    return <p>Lo sentimos, esta película no existe</p>;
+    return <p className='error__text'>Sorry, this movie doesn&apos;t exist</p>;
   }
 
   return (

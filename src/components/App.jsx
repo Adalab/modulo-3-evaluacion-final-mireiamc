@@ -92,11 +92,20 @@ const App = () => {
             <main className='movies-detail__container'>
               <MovieSceneDetail movie={movieData} />
               <Link className='link box' to='/'>
-                Volver
+                Back
               </Link>
             </main>
           }
         />
+        <Route
+          path='/*'
+          element={
+            <p className='not__found'>
+              Oh wow, what a disappointment! This page doesn&apos;t exist. Try
+              again or ask Santa Claus for Christmas.
+            </p>
+          }
+        ></Route>
       </Routes>
     </div>
   );
